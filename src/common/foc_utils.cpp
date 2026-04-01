@@ -1,6 +1,5 @@
 #include "foc_utils.h"
 
-
 // function approximating the sine calculation by using fixed size array
 // uses a 65 element lookup table and interpolation
 // thanks to @dekutree for his work on optimizing this

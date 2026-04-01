@@ -1,0 +1,52 @@
+{
+	"folders": [
+		{
+			"name": "SimpleFOC",
+			"path": ".."
+		},
+		{
+			"name": "Debug",
+			"path": "../../../Debug"
+		},
+		{
+			"path": "../../../Core"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ios": "cpp"
+		}
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Build STM32",
+				"type": "shell",
+				"command": "mingw32-make",
+				"args": [
+					"-j8",
+					"all"
+				],
+				"options": {
+					"cwd": "${workspaceFolder:Debug}",
+					"env": {
+						"PATH": "C:\\ST\\STM32CubeIDE_1.19.0\\STM32CubeIDE\\plugins\\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.100.202509120712\\tools\\bin;C:\\ST\\STM32CubeIDE_1.19.0\\STM32CubeIDE\\plugins\\com.st.stm32cube.ide.mcu.externaltools.make.win32_2.2.0.202409170845\\tools\\bin;${env:PATH}"
+					}
+				},
+				"presentation": {
+					"reveal": "always",
+					"panel": "shared",
+					"focus": true,
+					"clear": false,
+					"showReuseMessage": true
+				},
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": "$gcc"
+			}
+		]
+	}
+}

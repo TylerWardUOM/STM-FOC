@@ -1,5 +1,5 @@
 
-#include "SimpleFOCDebug.h"
+#include "./communication/SimpleFOCDebug.h"
 
 #ifndef SIMPLEFOC_DISABLE_DEBUG
 
